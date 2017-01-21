@@ -1,0 +1,5 @@
+/bin/
+/obj/
+StyleCop.Cache
+*.xproj.user
+project.lock.json
