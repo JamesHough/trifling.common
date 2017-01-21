@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Trifling.Common</id>
+    <version>0.1.0-beta</version>
+    <title>Trifling Common</title>
+    <authors>Trifling Contributors</authors>
+    <owners>JamesHough</owners>
+    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+    <projectUrl>https://github.com/JamesHough/trifling.common</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A Trifling Library for common functionality.</description>
+    <copyright>Copyright 2017</copyright>
+    <tags>serialization compression aspnetcore</tags>
+  </metadata>
+</package>
