@@ -38,6 +38,15 @@ namespace Trifling.Compression.Impl
         }
 
         /// <summary>
+        /// Initialises a new instance of the <see cref="DeflateCompressor"/> class with the specified configuration. 
+        /// </summary>
+        /// <param name="configuration">The configuration options for the compression engine.</param>
+        public DeflateCompressor(CompressorConfiguration configuration)
+        {
+            this._configuration = configuration ?? new CompressorConfiguration();
+        }
+
+        /// <summary>
         /// Compresses a source byte array and returns a Deflate compressed byte array.
         /// </summary>
         /// <param name="source">The source of data to compress.</param>

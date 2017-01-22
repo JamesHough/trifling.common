@@ -34,7 +34,16 @@ namespace Trifling.Compression.Impl
         /// <param name="configuration">The configuration options for the compression engine.</param>
         public GzipCompressor(IOptions<CompressorConfiguration> configuration)
         {
-            this._configuration = configuration.Value ?? new CompressorConfiguration();
+            this._configuration = configuration?.Value ?? new CompressorConfiguration();
+        }
+
+        /// <summary>
+        /// Initialises a new instance of the <see cref="GzipCompressor"/> class with the specified configuration. 
+        /// </summary>
+        /// <param name="configuration">The configuration options for the compression engine.</param>
+        public GzipCompressor(CompressorConfiguration configuration)
+        {
+            this._configuration = configuration ?? new CompressorConfiguration();
         }
 
         /// <summary>
