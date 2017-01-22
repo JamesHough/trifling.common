@@ -13,7 +13,7 @@ namespace Trifling.Compression.Impl
     /// <summary>
     /// A compressor which can compress and decompress data in G-Zip format.
     /// </summary>
-    public class GzipCompressor : ICompressor
+    public class GzipCompressor : IGzipCompressor
     {
         /// <summary>
         /// The configuration options for this implementation of a G-Zip Compressor.

@@ -13,7 +13,7 @@ namespace Trifling.Compression.Impl
     /// <summary>
     /// A compressor which can compress and decompress data in Deflate format.
     /// </summary>
-    public class DeflateCompressor : ICompressor
+    public class DeflateCompressor : IDeflateCompressor
     {
         /// <summary>
         /// The configuration options for this implementation of a Deflate Compressor.
