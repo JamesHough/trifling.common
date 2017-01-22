@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Trifling.Common</id>
-        <version>0.1.3-beta</version>
+        <version>0.1.4-beta</version>
         <title>Trifling Common</title>
         <authors>Trifling Contributors</authors>
         <owners>JamesHough</owners>
