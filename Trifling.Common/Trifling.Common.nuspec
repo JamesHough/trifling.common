@@ -1,16 +1,28 @@
-<?xml version="1.0"?>
-<package >
-  <metadata>
-    <id>Trifling.Common</id>
-    <version>0.1.0-beta</version>
-    <title>Trifling Common</title>
-    <authors>Trifling Contributors</authors>
-    <owners>JamesHough</owners>
-    <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
-    <projectUrl>https://github.com/JamesHough/trifling.common</projectUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>A Trifling Library for common functionality.</description>
-    <copyright>Copyright 2017</copyright>
-    <tags>serialization compression aspnetcore</tags>
-  </metadata>
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+    <metadata>
+        <id>Trifling.Common</id>
+        <version>0.1.0-beta</version>
+        <title>Trifling Common</title>
+        <authors>Trifling Contributors</authors>
+        <owners>JamesHough</owners>
+        <licenseUrl>http://opensource.org/licenses/MIT</licenseUrl>
+        <projectUrl>https://github.com/JamesHough/trifling.common</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>A Trifling Library for common functionality.</description>
+        <copyright>Copyright 2017</copyright>
+        <tags>serialization compression aspnetcore</tags>
+        <dependencies>
+            <group targetFramework=".NETStandard1.6">
+                <dependency id="Newtonsoft.Json" version="9.0.1" />
+                <dependency id="NETStandard.Library" version="1.6.1" />
+                <dependency id="Microsoft.Extensions.Options" version="1.1.0" />
+                <dependency id="System.Runtime.Serialization.Formatters" version="4.3.0" />
+            </group>
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="bin\Debug\netstandard1.6\Trifling.Common.deps.json" target="lib\netstandard1.6\Trifling.Common.deps.json" />
+        <file src="bin\Debug\netstandard1.6\Trifling.Common.dll" target="lib\netstandard1.6\Trifling.Common.dll" />
+    </files>
 </package>
