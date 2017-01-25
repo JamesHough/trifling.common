@@ -2,7 +2,7 @@
   "title": "Trifling",
   "copyright": "James Hough 2017",
   "description": "Trifling Library",
-  "version": "0.2.0-beta",
+  "version": "0.2.1-beta",
 
   "dependencies": {
     "Microsoft.Extensions.Options": "1.1.0",
