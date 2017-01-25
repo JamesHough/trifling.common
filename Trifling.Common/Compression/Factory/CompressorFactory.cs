@@ -17,11 +17,16 @@ namespace Trifling.Compression.Factory
         /// <summary>
         /// A map which describes which concrete implementations are used for each <see cref="ICompressor"/> interface. 
         /// </summary>
-        protected static Dictionary<Type, Type> map = new Dictionary<Type, Type>
+        private static Dictionary<Type, Type> map = new Dictionary<Type, Type>
         {
             { typeof(IDeflateCompressor), typeof(DeflateCompressor) },
             { typeof(IGzipCompressor), typeof(GzipCompressor) }
         };
+
+        /// <summary>
+        /// A map which describes which concrete implementations are used for each <see cref="ICompressor"/> interface. 
+        /// </summary>
+        protected static Dictionary<Type, Type> Map => map;
 
         /// <summary>
         /// Creates a new instance of the compressor which matches the requested type <typeparamref name="T"/>.

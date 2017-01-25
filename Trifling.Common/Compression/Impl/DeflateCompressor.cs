@@ -86,6 +86,7 @@ namespace Trifling.Compression.Impl
 
             // prepare the Deflate stream by outputting the configured compression level as the header.
             outputStream.WriteByte(0x78);
+
             switch (this._configuration.CompressionLevel)
             {
                 case CompressionLevel.NoCompression:

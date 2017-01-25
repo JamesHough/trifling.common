@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Trifling.Common</id>
-        <version>0.1.4-beta</version>
+        <version>0.2.0-beta</version>
         <title>Trifling Common</title>
         <authors>Trifling Contributors</authors>
         <owners>JamesHough</owners>
@@ -10,6 +10,8 @@
         <projectUrl>https://github.com/JamesHough/trifling.common</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A Trifling Library for common functionality.</description>
+        <releaseNotes>0.2.0-beta
+* Now supports .Net 4.5.2 in addition to NetStandard 1.6 support</releaseNotes>
         <copyright>Copyright 2017</copyright>
         <tags>serialization compression aspnetcore</tags>
         <dependencies>
@@ -22,7 +24,11 @@
         </dependencies>
     </metadata>
     <files>
-        <file src="bin\Debug\netstandard1.6\Trifling.Common.deps.json" target="lib\netstandard1.6\Trifling.Common.deps.json" />
+        <file src="bin\Debug\net452\Trifling.Common.dll" target="lib\net452\Trifling.Common.dll" />
+        <file src="bin\Debug\net452\Trifling.Common.pdb" target="lib\net452\Trifling.Common.pdb" />
+        <file src="bin\Debug\net452\Trifling.Common.xml" target="lib\net452\Trifling.Common.xml" />
         <file src="bin\Debug\netstandard1.6\Trifling.Common.dll" target="lib\netstandard1.6\Trifling.Common.dll" />
+        <file src="bin\Debug\netstandard1.6\Trifling.Common.pdb" target="lib\netstandard1.6\Trifling.Common.pdb" />
+        <file src="bin\Debug\netstandard1.6\Trifling.Common.xml" target="lib\netstandard1.6\Trifling.Common.xml" />
     </files>
 </package>
