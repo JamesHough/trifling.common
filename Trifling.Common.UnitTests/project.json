@@ -13,6 +13,7 @@
   "dependencies": {
     "Microsoft.Extensions.Logging.Abstractions": "1.1.0",
     "Moq": "4.6.38-alpha",
+    "dotnet-test-mstest": "1.1.2-preview",
     "MSTest.TestFramework": "1.0.8-rc",
     "Trifling.Common": "0.2.2-beta"
   },
@@ -22,8 +23,7 @@
     "netcoreapp1.0": {
       "imports": "dnxcore50",
       "dependencies": {
-        "Microsoft.NETCore.App": "1.1.0",
-        "dotnet-test-mstest": "1.1.2-preview"
+        "Microsoft.NETCore.App": "1.1.0"
       }
     },
 
