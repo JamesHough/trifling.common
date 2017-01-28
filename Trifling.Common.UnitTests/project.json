@@ -2,7 +2,7 @@
   "title": "Trifling.Common.UnitTests",
   "copyright": "James Hough 2017",
   "description": "The Unit Tests for the Trifling Library",
-  "version": "0.2.1-*",
+  "version": "0.2.2-*",
 
   "buildOptions": {
     "emitEntryPoint": true
@@ -11,9 +11,10 @@
   "testRunner": "mstest",
 
   "dependencies": {
+    "Microsoft.Extensions.Logging.Abstractions": "1.1.0",
     "Moq": "4.6.38-alpha",
     "MSTest.TestFramework": "1.0.8-rc",
-    "Trifling.Common": "0.2.1-beta"
+    "Trifling.Common": "0.2.2-beta"
   },
 
   "frameworks": {
