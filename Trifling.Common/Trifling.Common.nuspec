@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Trifling.Common</id>
-        <version>0.2.2-beta</version>
+        <version>0.3.0-beta</version>
         <title>Trifling Common</title>
         <authors>Trifling Contributors</authors>
         <owners>JamesHough</owners>
@@ -10,7 +10,10 @@
         <projectUrl>https://github.com/JamesHough/trifling.common</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>A Trifling Library for common functionality.</description>
-        <releaseNotes>0.2.2-beta
+        <releaseNotes>0.3.0-beta
+* Added Comparer implemetations for byte arrays
+
+0.2.2-beta
 * Added LoggingTextWriter to allow librabries which use text writers for logging to log to common logging providers.
 
 0.2.0-beta
