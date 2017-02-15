@@ -2,6 +2,7 @@ language: csharp
 dist: trusty
 sudo: required
 mono: none
-solution: Trifling.Common.sln
 dotnet: 1.0.0-preview2-003131
+script: 
+  - /build.travis.sh --quiet verify
 
