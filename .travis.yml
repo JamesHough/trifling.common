@@ -16,7 +16,7 @@ addons:
       name: "JamesHough/trifling.common"
       description: "A Trifling Library of common functionality"
     notification_email: 2jameshough@gmail.com
-    build_command_prepend: "chmod a+x ./build.travis.sh && cov-configure --comptype dotnet --compiler dotnet --template"
+    build_command_prepend: "chmod a+x ./build.travis.sh && cov-configure --comptype csc --compiler dotnet --template"
     build_command: "./build.travis.sh --quiet verify"
     branch_pattern: coverity_scan
 
