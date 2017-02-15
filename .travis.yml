@@ -1,5 +1,7 @@
 language: csharp
-solution: Trifling.Common.sln
+dist: trusty
+sudo: required
 mono: none
-dotnet: 1.0.0-preview-003121
+solution: Trifling.Common.sln
+dotnet: 1.0.0-preview2-003131
 
