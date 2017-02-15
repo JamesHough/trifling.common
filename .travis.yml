@@ -3,8 +3,20 @@ dist: trusty
 sudo: required
 mono: none
 dotnet: 1.0.0-preview2-003131
-before_script:
-  - chmod a+x ./build.travis.sh
-script: 
-  - ./build.travis.sh --quiet verify
+env:
+  global:
+   - secure: "izA0aYAOUG0bEnZfZ/Fr9L6YxEsDlbQUi6anM+FXJs40nUjMNOskZnpYSO/kact1/nGm06RkHESE+aTdFGEFka+A3vNC/RZYfazPnQ/3g5xfDQyyDwEVbkNiFifsU2CznwH+Re9ePa7QAlQqrkh0qNCBKTRqt8MABXwVUbp9BBtVksSI25jF9BAtxT/cNcEt3c4K7OExY5KIN4JXSWLY2dztyF4Xo98wZcfJnwz3BSzR3hKFBgFmgr9n53rYtzGf8PWpBjm3W5WwU0RhYYoNV6WBu04v8/hbEVc/OI3GsGOUlAIWi9grsyx5iPvMSpzvxuibSsDWSK6sXMcCXkrsqlYJWD+n3Ac1H9TaHy9tycPk3xo/7a/i+qJLjLQh5fur02Ftwn/y45nHBNYpQcVWi9KBOOfw9E4ZkdCL9QCU41HNilakEEPAqUaQUm8/DtHf81Mr5meNeeJtwDAdKva5HpxAK05GIMVW3seoMl5izuVoTPkZC9rRArrlzgXA8qp1f4aUzDa94FGG4z7VGZQat1GpyF3jQxM4sEX2hUWg13EOW8aN7DvdkD682x0HcUz0XqhU0b3a3w8IqT0wA/TqmbRBJvrCVR2K7mtvTTsaATvP6Y21BDaRn2wvgruZT7LegJNj1t1NVAoVSGlZhZjFJbqhtmnlw+G6rnNnGAuM0G4="
+
+before_install:
+      - echo -n | openssl s_client -connect scan.coverity.com:443 | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' | sudo tee -a /etc/ssl/certs/ca-
+
+addons:
+  coverity_scan:
+    project:
+      name: "JamesHough/trifling.common"
+      description: "A Trifling Library of common functionality"
+    notification_email: 2jameshough@gmail.com
+    build_command_prepend: "chmod a+x ./build.travis.sh"
+    build_command: "./build.travis.sh --quiet verify"
+    branch_pattern: coverity_scan
 
