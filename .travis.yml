@@ -1,5 +1,5 @@
 language: csharp
 solution: Trifling.Common.sln
 mono: none
-dotnet: 1.0.0-preview-003131
+dotnet: 1.0.0-preview-003121
 
