@@ -4,7 +4,7 @@ sudo: required
 mono: none
 dotnet: 1.0.0-preview2-003131
 before_script:
-  - chmod a+x ./build.travis.sh.sh
+  - chmod a+x ./build.travis.sh
 script: 
   - ./build.travis.sh --quiet verify
 
