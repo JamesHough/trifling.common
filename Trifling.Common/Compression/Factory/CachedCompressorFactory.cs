@@ -1,5 +1,5 @@
 ﻿// <copyright company="James Hough">
-//   Copyright (c) James Hough. Licensed under MIT License - refer to LICENSE.md
+//   Copyright (c) James Hough. Licensed under MIT License - refer to LICENSE file
 // </copyright>
 namespace Trifling.Compression.Factory
 {
