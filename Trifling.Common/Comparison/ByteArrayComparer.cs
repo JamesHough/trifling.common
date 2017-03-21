@@ -8,7 +8,7 @@ namespace Trifling.Comparison
     /// <summary>
     /// A comparer for comparing the content of two byte arrays.
     /// </summary>
-    public class ByteArrayComparer : IComparer<byte[]>
+    public class ByteArrayComparer : IComparer<byte[]>, IEqualityComparer<byte[]>
     {
         /// <summary>
         /// Gets the default instance of the <see cref="ByteArrayComparer"/>. 
@@ -62,6 +62,42 @@ namespace Trifling.Comparison
             }
 
             return 0;
+        }
+
+        /// <summary>
+        /// Determines if the given byte arrays are equal.
+        /// </summary>
+        /// <param name="x">The first byte array to compare.</param>
+        /// <param name="y">The second byte array to compare.</param>
+        /// <returns>Returns true if both arrays are the same length and contain exactly the same values at each position.</returns>
+        public bool Equals(byte[] x, byte[] y)
+        {
+            return this.Compare(x, y) == 0;
+        }
+
+        /// <summary>
+        /// Generates a hash code for the given byte array value.
+        /// </summary>
+        /// <param name="obj">The byte array for which to generate a hash code.</param>
+        /// <returns>Returns an integer hash code.</returns>
+        public int GetHashCode(byte[] obj)
+        {
+            if (obj == null || obj.Length < 1)
+            {
+                return 0;
+            }
+
+            const int Prime = 37;
+            unchecked
+            {
+                var hash = 0x900;
+                for (var i = 0; i < obj.Length; i++)
+                {
+                    hash = (hash * Prime) + obj[i].GetHashCode();
+                }
+
+                return hash;
+            }
         }
     }
 }
